@@ -1,0 +1,78 @@
+/* 基本樣式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    background-color: #0099cc;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.selectors {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+select, #keywordSearch {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+select:hover, #keywordSearch:hover {
+    border-color: #0099cc;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+    max-width: 800px;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li:hover {
+    background-color: #e9e9e9;
+}
+
+a {
+    text-decoration: none;
+    color: #0099cc;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #006688;
+}
