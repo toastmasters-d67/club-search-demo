@@ -13,25 +13,27 @@
 
     <div class="selectors">
         <select id="divisionSelect">
-            <option value="A">Division A</option>
-            <option value="B">Division B</option>
-            <option value="C">Division C</option>
-            <option value="D">Division D</option>
-            <option value="E">Division E</option>
-            <option value="F">Division F</option>
-            <option value="G">Division G</option>
-            <option value="H">Division H</option>
-            <option value="I">Division I</option>
-            <option value="J">Division J</option>
-            <option value="K">Division K</option>
-            <option value="L">Division L</option>
-            <option value="M">Division M</option>
-            <option value="N">Division N</option>
-            <option value="O">Division O</option>
-            <option value="P">Division P</option>
+            <option value="all">所有部</option>
+            <option value="A">A部</option>
+            <option value="B">B部</option>
+            <option value="C">C部</option>
+            <option value="D">D部</option>
+            <option value="E">E部</option>
+            <option value="F">F部</option>
+            <option value="G">G部</option>
+            <option value="H">H部</option>
+            <option value="I">I部</option>
+            <option value="J">J部</option>
+            <option value="K">K部</option>
+            <option value="L">L部</option>
+            <option value="M">M部</option>
+            <option value="N">N部</option>
+            <option value="O">O部</option>
+            <option value="P">P部</option>
         </select>
 
-        <select>
+        <select id="citySelect">
+            <option value="all">所有城市</option>
             <option value="台北市">台北市</option>
             <option value="新北市">新北市</option>
             <option value="桃園市">桃園市</option>
@@ -54,7 +56,8 @@
             <option value="連江縣">連江縣</option>
         </select>
 
-        <select>
+        <select id="meetingDaySelect">
+            <option value="all">所有日期</option>
             <option value="星期一">星期一</option>
             <option value="星期二">星期二</option>
             <option value="星期三">星期三</option>
@@ -64,7 +67,8 @@
             <option value="星期日">星期日</option>
         </select>
 
-        <select>
+        <select id="languageSelect">
+            <option value="all">所有語言</option>
             <option value="英語">英語</option>
             <option value="日語">日語</option>
             <option value="國語">國語</option>
@@ -74,13 +78,24 @@
         </select>
 
         <input type="text" id="keywordSearch" placeholder="輸入關鍵字...">
+        <button id="filterButton">篩選結果</button>
     </div>
 
     <h2>分會資訊</h2>
     <ul id="clubList">
-        <li data-division="A"><a href="http://ckc300.blogspot.tw/">樂陶陶中文國際演講會 Happiness Toastmasters Club</a> - 國語 - 台中市</li>
-        <li data-division="B"><a href="http://ncb.toastmasters.club.tw/">新世紀雙語國際演講會 New Century Bilingual Toastmasters Club</a> - 雙語 - 台中市</li>
-        <li data-division="A"><a href="http://ceci.toastmastersclubs.org/">中華顧問英語國際演講會 CECI Toastmasters Club</a> - 英語 - 台北市</li>
+        <li data-division="A" data-city="台中市" data-meeting-day="星期一" data-language="國語" data-features="友善,活躍">
+            <a href="http://ckc300.blogspot.tw/">樂陶陶中文國際演講會 Happiness Toastmasters Club</a> - 國語 - 台中市
+            <span class="features">特色: 友善, 活躍</span>
+        </li>
+        <li data-division="B" data-city="台中市" data-meeting-day="星期三" data-language="雙語" data-features="專業,雙語">
+            <a href="http://ncb.toastmasters.club.tw/">新世紀雙語國際演講會 New Century Bilingual Toastmasters Club</a> - 雙語 - 台中市
+            <span class="features">特色: 專業, 雙語</span>
+        </li>
+        <li data-division="A" data-city="台北市" data-meeting-day="星期五" data-language="英語" data-features="國際,多元">
+            <a href="http://ceci.toastmastersclubs.org/">中華顧問英語國際演講會 CECI Toastmasters Club</a> - 英語 - 台北市
+            <span class="features">特色: 國際, 多元</span>
+        </li>
+        <!-- 這裡可以添加其他分會的資訊，格式與上面的例子相同 -->
     </ul>
 
     <script src="script.js"></script>
